@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.proyecto.databinding.ActivityMenuDeNavegacionBinding;
 
+import java.util.zip.Inflater;
+
 public class Menu_de_navegacion extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -24,6 +26,7 @@ public class Menu_de_navegacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         binding = ActivityMenuDeNavegacionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

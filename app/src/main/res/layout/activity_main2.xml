@@ -25,6 +25,7 @@
         app:layout_constraintVertical_bias="0.054" />
 
     <EditText
+        android:id="@+id/nombre1"
         android:layout_width="316dp"
         android:layout_height="48dp"
         android:layout_marginLeft="15dp"
@@ -38,10 +39,10 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.127" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -140,13 +141,13 @@
         app:layout_constraintVertical_bias="0.766"></Spinner>
 
 
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Continuar"
         android:backgroundTint="#3EA1F7"
+        android:onClick="completado"
+        android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
