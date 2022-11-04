@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void revision(View view)
     {
-        Intent revision= new Intent(this,MainActivity3.class);
+        Intent revision= new Intent(this,Noticias.class);
         startActivity(revision);
     }
 
@@ -47,19 +47,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public boolean onOptionsItemSelected (@NonNull MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.item1:
-                Toast.makeText(this,"principal",Toast.LENGTH_SHORT).show();
-                return true;
 
-            case R.id.item2:
-                Toast.makeText(this,"noticias",Toast.LENGTH_SHORT).show();
-                return true;
-
-            default: return super.onOptionsItemSelected(item);
-        }
-    }
 }
