@@ -32,18 +32,16 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.navview);
 
 
-        setToolBar();
+        //setToolBar();
 
-        /*
-        Intent menuslide = new Intent(getApplicationContext(),Menu_de_navegacion.class);
-        startActivity(menuslide);*/
+
     }
 
     private void setToolBar()
     {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.mopciones);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu_principal);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void revision(View view)
     {
-        Intent revision= new Intent(this,Noticias.class);
+        Intent revision= new Intent(this,MainActivity4.class);
         startActivity(revision);
     }
 
