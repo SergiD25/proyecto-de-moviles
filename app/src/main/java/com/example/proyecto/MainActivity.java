@@ -8,17 +8,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
+
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private MenuItem item;
 
 
     @Override
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.navview);
 
 
-        //setToolBar();
+        setToolBar();
 
 
     }
@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void registro(View view)
     {
-        Intent registro= new Intent(this,MainActivity2.class);
+        Intent registro= new Intent(this,MainActivity3.class);
         startActivity(registro);
     }
 
     public void revision(View view)
     {
-        Intent revision= new Intent(this,MainActivity4.class);
+        Intent revision= new Intent(this,Consulta.class);
         startActivity(revision);
     }
 
@@ -68,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.START);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+    public void Noticias(View view)
+    {
+        Intent Noticias= new Intent(this,Noticias.class);
+        startActivity(Noticias);
     }
 
 

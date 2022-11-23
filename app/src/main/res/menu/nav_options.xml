@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/noticias"
-            android:title="Noticias"
-            android:icon="@drawable/noticias"
-            />
-
-        <item
-            android:id="@+id/conocenos"
-            android:title="Sobre nosotros"
-            android:icon="@drawable/conocenos"
-            />
-
-    </group>
+    <group android:checkableBehavior="single"/>
+    <item
+        android:id="@+id/noticias"
+        android:icon="@drawable/noticias"
+        android:title="Noticias" />
+    <item
+        android:id="@+id/nosotros"
+        android:icon="@drawable/conocenos"
+        android:title="Sobre nosotros" />
 </menu>
