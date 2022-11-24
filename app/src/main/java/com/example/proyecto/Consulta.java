@@ -41,7 +41,7 @@ public class Consulta extends AppCompatActivity {
        generarconsulta.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               buscar("http://studi-html.infinityfreeapp.com/select.php"+consultar.getText()+"");
+               buscar("http://studi-html.infinityfreeapp.com/consulta.php"+consultar.getText()+"");
            }
        });
 

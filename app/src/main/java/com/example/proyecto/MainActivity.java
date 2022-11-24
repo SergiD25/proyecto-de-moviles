@@ -32,18 +32,11 @@ public class MainActivity extends AppCompatActivity  {
         navigationView = findViewById(R.id.navview);
 
 
-        setToolBar();
 
 
     }
 
-    private void setToolBar()
-    {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.mopciones);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+
 
     public void registro(View view)
     {
@@ -77,6 +70,12 @@ public class MainActivity extends AppCompatActivity  {
     {
         Intent Noticias= new Intent(this,Noticias.class);
         startActivity(Noticias);
+    }
+
+    public void Conocenos(View view)
+    {
+        Intent Conocenos= new Intent(this,conocenos.class);
+        startActivity(Conocenos);
     }
 
 

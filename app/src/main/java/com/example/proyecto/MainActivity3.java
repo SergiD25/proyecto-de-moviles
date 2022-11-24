@@ -34,7 +34,7 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
 
-        nombre1 = (EditText)findViewById(R.id.nombre2);
+        nombre1 = (EditText)findViewById(R.id.nombre1);
         nombre2 = (EditText)findViewById(R.id.nombre2);
         apellido1 = (EditText)findViewById(R.id.apellido1);
         apellido2 = (EditText)findViewById(R.id.apellido2);
@@ -82,12 +82,12 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String,String>();
-                parametros.put("tipo_de_documento",spLista.getSelectedItem().toString());
-                parametros.put("numdocumento",numdocumento.getText().toString());
-                parametros.put("nombre1",nombre1.getText().toString());
-                parametros.put("nombre2",nombre2.getText().toString());
-                parametros.put("apellido1",apellido1.getText().toString());
-                parametros.put("apellido2",apellido2.getText().toString());
+                parametros.put("tipo_doc",spLista.getSelectedItem().toString());
+                parametros.put("nro_documento",numdocumento.getText().toString());
+                parametros.put("primer_nombre",nombre1.getText().toString());
+                parametros.put("segundo_nombre",nombre2.getText().toString());
+                parametros.put("primer_apellido",apellido1.getText().toString());
+                parametros.put("segundo_apellido",apellido2.getText().toString());
                 parametros.put("telefono",telefono.getText().toString());
                 parametros.put("direccion",direccion.getText().toString());
                 parametros.put("correo",correo.getText().toString());
